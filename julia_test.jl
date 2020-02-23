@@ -1,0 +1,1 @@
+a = [3x + 2y + z for x in 1:2, y in 2:3, z in 1:2]
