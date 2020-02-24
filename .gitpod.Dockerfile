@@ -17,7 +17,5 @@ RUN sudo apt-get update \
         julia \
     && sudo rm -rf /var/lib/apt/lists/*
 
-RUN -ci "$(curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh)"
-RUN source ~/.bashrc
 # Give control back to Gitpod Layer
 USER root
