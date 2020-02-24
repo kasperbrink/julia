@@ -6,7 +6,10 @@ nbrmodel = glm(@formula(Days ~ Eth+Sex+Age+Lrn), quine, NegativeBinomial(2.0), L
 form = dataset("datasets", "Formaldehyde")
 lm1 = fit(LinearModel, @formula(OptDen ~ Carb), form)
 
-form[:, :Carb]
+form[:, :OptDen]
 
 sum((predict(lm1)- form[:, :OptDen]).^2)
+
+using Flux
+
 
