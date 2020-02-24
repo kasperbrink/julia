@@ -14,8 +14,8 @@ RUN sudo apt-get update \
         m4 \
         cmake \
         pkg-config \
+        julia \
     && sudo rm -rf /var/lib/apt/lists/*
 
-RUN sudo bash -ci "$(curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh)"
 # Give control back to Gitpod Layer
 USER root
