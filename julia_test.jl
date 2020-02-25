@@ -6,7 +6,7 @@ name = "navn navnesen"
 
 function name_val(name)
     res = zeros(length(name))
-    letters = join('a':'z')*join('æ','ø')
+    letters = join('a':'z') * string("æøå")
     for i in 1:length(name), m in eachmatch(Regex(string(lowercase(name[i]))), letters)
         println("Matched $(m.match) at index $(m.offset)")
         res[i] = m.offset
@@ -14,6 +14,6 @@ function name_val(name)
     println("Sum er $(sum(res))") 
 end
 
-name_val("Johanna Gløy Brink")
+name_val("Johanna Gly Brink")
 
 

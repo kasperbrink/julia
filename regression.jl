@@ -10,6 +10,6 @@ form[:, :OptDen]
 
 sum((predict(lm1)- form[:, :OptDen]).^2)
 
-using Flux
+
 
 
