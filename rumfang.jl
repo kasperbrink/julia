@@ -4,6 +4,7 @@ h=46
 l=6
 v=b*h*l
 
+# volumen funktion
 function vol(b,h,l)
    println("rumfang er $(b*h*l) hilsen Johanna")  
 end
@@ -12,6 +13,10 @@ end
 vol(3,5,9)
 
 
-for i=1:10,  j=2:6
-    vol(i,j,7)
+# delfunktion
+function del(t,n,tal)
+    println("$(t)/$(n) af $(tal) er $(tal/n*t) hilsen Johanna") 
 end
+
+
+del(2,3,9)
