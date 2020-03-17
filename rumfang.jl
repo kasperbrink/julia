@@ -5,12 +5,17 @@ l=6
 v=b*h*l
 
 # volumen funktion
-function vol(b,h,l)
-   println("rumfang er $(b*h*l) hilsen Johanna")  
+function vol(;bredde,højde,længde)
+   println("rumfang er $(bredde*højde*længde) hilsen Johanna")  
 end
 
+# areal funktion
+function areal(;bredde,længde)
+    println("areal er $(bredde*længde) venlig hilsen Johanna")
+end
 
-vol(3,5,9)
+areal(bredde=7,længde=9)
+vol(bredde=3,højde=5,længde=9)
 
 
 # delfunktion
@@ -20,3 +25,5 @@ end
 
 
 del(2,3,9)
+
+round(25.1353, digits = 3)
